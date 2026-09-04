@@ -80,6 +80,12 @@ fs.writeFileSync(path.join(workspace, "faq", "index.html"), faq, "utf8");
 const landingPath = path.join(workspace, "index.html");
 let landing = fs.readFileSync(landingPath, "utf8");
 landing = landing.replaceAll('href="faq.html"', 'href="/faq"').replaceAll('href="privacy.html"', 'href="/privacy"').replaceAll('href="terms.html"', 'href="/terms"');
+if (!landing.includes('href="/account-removal"')) {
+  landing = landing.replace(
+    '<a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a>',
+    '<a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a><a href="/account-removal">Request Account Removal</a>'
+  );
+}
 fs.writeFileSync(landingPath, landing, "utf8");
 
 console.log(`Updated Terms (${termsCount} blocks), Privacy (${privacyCount} blocks), and clean routes.`);

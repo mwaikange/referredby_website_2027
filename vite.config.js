@@ -11,5 +11,5 @@ const workerOutput = {
 };
 export default defineConfig({
   plugins: [sites(), workerOutput],
-  build: { rollupOptions: { input: { home: "index.html", faq: "faq/index.html", privacy: "privacy/index.html", terms: "terms/index.html" } } }
+  build: { rollupOptions: { input: { home: "index.html", faq: "faq/index.html", privacy: "privacy/index.html", terms: "terms/index.html", accountRemoval: "account-removal/index.html" } } }
 });

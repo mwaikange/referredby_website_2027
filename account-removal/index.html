@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Request deletion of your ReferredBy app account and associated personal data.">
+  <title>Request Account Removal — ReferredBy</title>
+  <link rel="icon" href="/assets/image-01.png">
+  <link rel="stylesheet" href="/account-removal/styles.css">
+</head>
+<body>
+  <div class="brand-strip"></div>
+  <header><div class="wrap nav"><a class="brand" href="/"><img src="/assets/image-19.png" alt="ReferredBy"></a><a class="back" href="/">Back to home</a></div></header>
+  <main>
+    <section class="intro"><div class="wrap narrow"><span class="eyebrow">Privacy request</span><h1>Request account removal</h1><p>Use this page to request permanent deletion of your ReferredBy app account and the personal data associated with it.</p></div></section>
+    <section class="wrap form-layout">
+      <aside class="process-card">
+        <h2>What happens next</h2>
+        <ol><li><span>1</span><div><strong>Submit your request</strong><p>Provide the details associated with your ReferredBy account.</p></div></li><li><span>2</span><div><strong>Verify your identity</strong><p>Our support team may contact you to protect your account from unauthorized deletion.</p></div></li><li><span>3</span><div><strong>Account and data deletion</strong><p>Once verified, we will process the request within 30 days.</p></div></li></ol>
+        <div class="retention"><strong>Data we may retain</strong><p>Information required for legal, regulatory, fraud-prevention, or financial-record obligations may be retained for the applicable period. It will no longer be used for ordinary account services.</p></div>
+      </aside>
+      <div class="form-card">
+        <h2>Account details</h2><p class="form-lead">Fields marked with * are required. Please use the information registered on your account.</p>
+        <form id="removal-form" novalidate>
+          <div class="form-grid"><label>First name *<input name="firstName" autocomplete="given-name" maxlength="80" required></label><label>Last name *<input name="lastName" autocomplete="family-name" maxlength="80" required></label></div>
+          <label>Email address *<input name="email" type="email" autocomplete="email" maxlength="160" required></label>
+          <div class="form-grid"><label>Account UID *<input name="accountUid" maxlength="100" required></label><label>Registered phone number *<input name="phone" type="tel" autocomplete="tel" maxlength="40" placeholder="e.g. +264 81 000 0000" required></label></div>
+          <label>Reason for deletion <span>(optional)</span><textarea name="reason" rows="5" maxlength="2000"></textarea></label>
+          <label class="honeypot" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
+          <label class="consent"><input name="consent" type="checkbox" required><span>I understand that deleting my account is permanent, removes access to my ReferredBy profile, and may require identity verification.</span></label>
+          <button type="submit">Submit removal request</button>
+          <div id="status" class="status" role="status" aria-live="polite"></div>
+          <a id="email-fallback" class="email-fallback" href="mailto:support@referredby.com.na?subject=ReferredBy%20account%20removal%20request">Send the request by email instead</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer"><div><img src="/assets/image-19.png" alt="ReferredBy"><p>Community vetted financing.</p></div><div><strong>Support</strong><a href="mailto:support@referredby.com.na">support@referredby.com.na</a><a href="/privacy">Privacy Policy</a><a href="/terms">Terms of Service</a></div></div><div class="wrap copyright">© 2026 ReferredBy Financial Solutions cc.</div></footer>
+  <script type="module" src="/account-removal/form.js"></script>
+</body>
+</html>
