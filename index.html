@@ -122,7 +122,7 @@ footer{background:#07062e;color:#bbbfd2;padding:34px 0 0}.foot{display:grid;grid
 </div>
 </section>
 </main>
-<script>document.querySelector('.hero-download-badges')?.append(document.querySelector('.download .stores'));</script>
+<script>(()=>{const source=document.querySelector('.download .stores');const hero=document.querySelector('.hero-download-badges');if(!source||!hero)return;const apkIcon='data:image/svg+xml,'+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="white"><path d="M420 302a24 24 0 1 1 24-24 24 24 0 0 1-24 24M155 302a24 24 0 1 1 24-24 24 24 0 0 1-24 24M429 157l48-83a10 10 0 1 0-17-10l-49 84a301 301 0 0 0-247 0l-48-84a10 10 0 1 0-17 10l48 83C65 202 8 286 0 384h576c-8-98-65-182-147-227M192 407h192v24H192z"/></svg>');source.querySelectorAll('.store.apk img').forEach(img=>img.src=apkIcon);hero.append(source.cloneNode(true));})();</script>
 <footer id="support">
 <div class="wrap">
 <div class="foot">
